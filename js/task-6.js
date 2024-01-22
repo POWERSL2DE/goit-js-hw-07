@@ -25,6 +25,7 @@ function createBoxes(amount) {
     elements.push(box);
   }
   newBoxes.append(...elements);
+  input.value = "";
 } 
 
 
@@ -33,16 +34,15 @@ function destroyBoxes() {
 }
 
 
-buttonCreate.addEventListener("Click", () => {
+buttonCreate.addEventListener("click", () => {
   destroyBoxes();
   const amount = input.value;
   if (amount >= 1 && amount <= 100) {
     createBoxes(amount);
   } 
-  input.value = "";
 });
 
 
-buttonDestroy.addEventListener("Click", () => {
+buttonDestroy.addEventListener("click", () => {
   destroyBoxes();
 });

@@ -10,8 +10,8 @@ const register = (event) => {
     }
 
     const formKeys = {
-        Email: emailValue,
-        Password: passwordValue,
+        email: emailValue,
+        password: passwordValue,
     };
     
     console.log(formKeys);

@@ -33,4 +33,3 @@ const markup = images.map((image) => `<li><img src="${image.url}" alt="${image.a
 
 const gallery = document.querySelector('.gallery');
 gallery.innerHTML = markup;
-// gallery.classList.add("image-items");
