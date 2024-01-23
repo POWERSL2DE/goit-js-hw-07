@@ -29,7 +29,7 @@ const images = [
 ];
 
 
-const markup = images.map((image) => `<li><img src="${image.url}" alt="${image.alt}" width="360px" height="300px"><li>`).join('');
+const markup = images.map((image) => `<li><img src="${image.url}" alt="${image.alt}" width="360px" height="300px"></li>`).join('');
 
 const gallery = document.querySelector('.gallery');
 gallery.innerHTML = markup;

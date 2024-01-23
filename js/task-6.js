@@ -14,9 +14,10 @@ const newBoxes = document.querySelector("#boxes");
 function createBoxes(amount) {
   let size = 30;
   let elements = [];
+
   for (let i = 0; i < amount; i ++) {
+    size = 30 + i * 10;
     const box = document.createElement("div");
-    size += 10;
 
     box.style.width = `${size}px`;
     box.style.height = `${size}px`;
@@ -24,6 +25,7 @@ function createBoxes(amount) {
 
     elements.push(box);
   }
+
   newBoxes.append(...elements);
   input.value = "";
 } 

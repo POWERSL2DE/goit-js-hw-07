@@ -2,16 +2,16 @@ const loginForm = document.querySelector(".login-form");
 
 const register = (event) => {
     event.preventDefault();
-    const emailValue = loginForm.elements.email.value.trim();
-    const passwordValue = loginForm.elements.password.value.trim();
+    const email = loginForm.elements.email.value.trim();
+    const password = loginForm.elements.password.value.trim();
 
-    if (emailValue === "" || passwordValue === "") {
+    if (email === "" || password === "") {
         return alert("All form fields must be filled in");
     }
 
     const formKeys = {
-        email: emailValue,
-        password: passwordValue,
+        email: email,
+        password: password,
     };
     
     console.log(formKeys);
